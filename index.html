@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,77 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- daisyui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body class="bg-[#f5fff6]">
-    <nav>
-        <div>
-            <div>
-                <img src="./assets/logo.png" alt="">
-                <h3>Emergency Service</h3>
+    <!-- navbar section -->
+    <nav class="ml-16 mr-16 bg-white pt-10 pb-10">
+        <div class="flex justify-between items-center">
+            <div class="website-logo flex">
+                <img src="./assets/logo.png" alt="" height="50px" width="50px">
+                <h3 class="font-bold text-[#006747] ml-3">Emergency <br>Service<h3>
             </div>
-            <div></div>
+            <div class="navber-button">
+                <button class="btn btn-success p-5">
+                    <p>0</p>
+                    <img src="./assets/heart.png" alt="" height="20px" width="20px">
+                </button>
+                <button class="btn btn-success ml-5 p-5">
+                    <p>0</p>
+                    <img src="./assets/coin.png" alt="" height="20px" width="20px">
+                </button>
+                <button class="btn btn-success ml-5 p-5">
+                    <p>Copy</p>
+                </button>
+            </div>
         </div>
     </nav>
+    <!-- header section -->
+    <header
+        class="flex flex-col justify-center items-center bg-[#013223] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+        <img class="mt-5" src="./assets/logo-dark.png" alt="" height="95px" width="95px">
+        <h1 class="font-bold text-2xl text-white">Emergency Service Directory</h1>
+        <p class="font-semibold mt-3 mb-5 text-white">Government Emergency Services at Your Fingertip – A Project by
+            Government of the People’s Republic of Bangladesh</p>
+    </header>
+    <main>
+        <div>
+            <div>
+                <div class="container h-[360px] w-[430px] p-[32px]">
+                    <div class="card-grid">
+                        <div class="card bg-base-100 shadow-xl custom-card">
+                            <figure class="px-6 pt-6">
+                                <div class="card-icon flex justify-between items-center w-full">
+                                    <img src="./assets/emergency.png" alt="Emergency" height="60" width="60">
+                                    <img src="./assets/heart-transperent.png" alt="Heart" height="32" width="32">
+                                </div>
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="font-bold text-xl">National Emergency Number</h2>
+                                <p class="font-[300] text-xs">National Emergency</p>
+                                <h1 class="emergency-number font-bold text-2xl">999</h1>
+                                <button class="badge badge-outline">All</button>
+                                <div class="flex justify-between mt-4 gap-2">
+                                    <button class="btn p-3 w-1/2">
+                                        <i class="fas fa-copy"></i>
+                                        Copy
+                                    </button>
+                                    <button class="btn btn-success text-white p-3 w-1/2">
+                                        <i class="fas fa-phone"></i> Call
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </main>
+
+
+
 </body>
+
 </html>
