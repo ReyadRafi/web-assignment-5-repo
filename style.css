@@ -1,0 +1,65 @@
+        .navber-button .btn {
+            border-radius: 12px !important;
+            transition: all 0.3s ease;
+        }
+        
+        .custom-btn {
+            background: rgba(65, 255, 107, 0.1) !important;
+            border: 1px solid rgba(65, 255, 107, 0.2);
+            color: #006747;
+        }
+        
+        .custom-btn:hover {
+            background: rgba(65, 255, 107, 0.15) !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .custom-btn:active {
+            background: rgba(65, 255, 107, 0.2) !important;
+            transform: translateY(0);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .history-item {
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .low-coins {
+            animation: pulse 2s infinite;
+            background: rgba(255, 100, 100, 0.15) !important;
+        }
+        
+        @keyframes heartBeat {
+            0% { transform: scale(1); }
+            15% { transform: scale(1.3); }
+            30% { transform: scale(1); }
+            45% { transform: scale(1.3); }
+            60% { transform: scale(1); }
+        }
+        
+        .heart-animate {
+            animation: heartBeat 0.8s;
+        }
+        
+        .service-icon {
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0fdf4;
+            border-radius: 10px;
+            color: #006747;
+            font-size: 20px;
+        }
